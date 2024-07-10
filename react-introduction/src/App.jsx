@@ -7,6 +7,13 @@ export function App() {
   return (
     <div>
       <h1>This is my first react project!</h1>
+      <input
+        type={"checkbox"}
+        checked
+        onChange={function () {
+          console.log("You clicked the checkbox.");
+        }}
+      />
       <Greetings
         firstName={"Aaron"}
         age={22}
