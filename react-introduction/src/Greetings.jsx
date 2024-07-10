@@ -1,7 +1,9 @@
-export function Greetings(){
-    return <ul>
-        <li>Hi</li>
-        <li>Hello</li>
-        <li>What's good</li>
-    </ul>
+export function Greetings(props) {
+  console.log(props);
+  return (
+    <div>
+      Hi {props.firstName}. You are {props.age}. Here is me passing a child from
+      the App.jsx: {props.children}
+    </div>
+  );
 }
