@@ -15,11 +15,19 @@ export const MenuListItem = (props) => {
     if (isHovered) {
       return "#cb9ce6";
     } else {
-      return "#ddc2ed";
+      if (props.isSelected) {
+        return "#b864e8";
+      } else {
+        return "#ddc2ed";
+      }
     }
   }
+  const onItemClick = () => {
+    props.onClick(props.difficulty);
+  };
   return (
     <div
+      onClick={onItemClick}
       className={s.container}
       onMouseEnter={activate}
       onMouseLeave={deactivate}
