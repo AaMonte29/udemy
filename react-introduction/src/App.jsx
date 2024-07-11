@@ -1,3 +1,9 @@
+import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficulty";
+
 export function App() {
-  return <div></div>;
+  return (
+    <div>
+      <DisplayDifficulty difficulty={"easy"} />
+    </div>
+  );
 }
